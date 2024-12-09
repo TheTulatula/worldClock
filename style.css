@@ -1,3 +1,14 @@
+body {
+  margin: 20px;
+}
+h1 {
+  text-align: center;
+  margin: auto;
+}
+footer {
+  margin: 20px auto;
+  text-align: center;
+}
 a {
   text-decoration: none;
 }
