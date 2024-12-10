@@ -9,6 +9,8 @@ body {
   padding: 30px;
   border-radius: 10px;
   background-color: white;
+  outline: 4px solid #f6f5fc;
+  outline-offset: -8px;
   box-shadow: 0px 0px 20px rgb(162, 162, 162);
 }
 h1 {
