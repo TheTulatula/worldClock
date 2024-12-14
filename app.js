@@ -37,9 +37,15 @@ function updateTime() {
 }
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+
+  if (cityTimeZone === "backHome") {
+    location.reload();
+    return;
+  }
   if (cityTimeZone === "current") {
     cityTimeZone = moment.tz.guess();
   }
+
   let cityTime = moment().tz(cityTimeZone);
   let cityName = getCityName(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
